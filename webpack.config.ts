@@ -4,7 +4,7 @@ import { BundleAnalyzerPlugin } from "webpack-bundle-analyzer";
 import ForkTsCheckerWebpackPlugin from "fork-ts-checker-webpack-plugin";
 
 module.exports = {
-  mode: "production",
+  mode: "development",
   entry: {
     bundle: path.resolve(__dirname, "src/index.ts"),
   },
@@ -50,9 +50,10 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
+      inject: true,
       title: "Nils Countdown",
       filename: "index.html",
-      template: "src/template.html",
+      template: path.resolve("src/template.html"),
     }),
     new ForkTsCheckerWebpackPlugin({
       async: false,
