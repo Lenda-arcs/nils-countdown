@@ -55,9 +55,9 @@ module.exports = {
       filename: "index.html",
       template: path.resolve("src/template.html"),
     }),
-    new ForkTsCheckerWebpackPlugin({
-      async: false,
-    }),
-    new BundleAnalyzerPlugin(),
+    // new ForkTsCheckerWebpackPlugin({
+    //   async: false,
+    // }),
+    // new BundleAnalyzerPlugin(),
   ],
 };
