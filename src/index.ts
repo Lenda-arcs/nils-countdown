@@ -3,6 +3,13 @@ const pic_nils = require("../assets/nils_lol.JPG");
 
 let timeCache: { time: number; label: string }[];
 
+const head = document.querySelector("head")!;
+const ogMetatag = document.createElement("meta");
+ogMetatag.setAttribute("property", "og:image");
+ogMetatag.content = pic_nils;
+
+head.appendChild(ogMetatag);
+
 const body = document.querySelector("body")!;
 body.className = " bg-gradient-to-r from-cyan-500 to-blue-500 ";
 
