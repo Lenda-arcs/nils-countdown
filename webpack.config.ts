@@ -4,7 +4,7 @@ import { BundleAnalyzerPlugin } from "webpack-bundle-analyzer";
 import ForkTsCheckerWebpackPlugin from "fork-ts-checker-webpack-plugin";
 
 module.exports = {
-  mode: "development",
+  mode: "production",
   entry: {
     bundle: path.resolve(__dirname, "src/index.ts"),
   },

@@ -12,3 +12,6 @@ node_modules
 
 # Ignore files related to API keys
 .env
+
+#ignore build folder
+/dist
